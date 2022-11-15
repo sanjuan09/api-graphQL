@@ -26,12 +26,17 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ### Dependencies:
 
 * [Laravel 6.0+](https://github.com/laravel/laravel)
-* [GraphQL PHP](https://github.com/webonyx/graphql-php)
-
+* [Composer](https://getcomposer.org/)
+* [Laravel GraphQL](https://github.com/rebing/graphql-laravel)
 
 ### Installation:
 
 Clonar repositorio de github:
+
+Instalacion de dependencias con composer:
+```bash
+composer install
+```
 
 Requiere docker engine/docker descktop pre instalado:
 
@@ -42,11 +47,6 @@ alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 inciar el docker:
 ```bash
 sail up -d
-```
-
-Instalacion de dependencias con composer:
-```bash
-sail composer install
 ```
 
 copiar .env.example a .env
