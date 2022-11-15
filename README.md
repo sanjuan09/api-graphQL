@@ -64,7 +64,7 @@ http://localhost:8800/graphiql
 
 Ejemplos de uso:
 
-# Crear ticket
+## Crear ticket
 ```bash
 mutation{
   CrearTicket(usuario: "jsanjuan2", estatus: "abierto"){
@@ -72,7 +72,7 @@ mutation{
   }
 }
 ```
-# Editar ticket
+## Editar ticket
 ```bash
 mutation{
   EditarTicket(id: 22, estatus: "cerrado"){
@@ -80,13 +80,13 @@ mutation{
   }
 }
 ```
-# Borrar ticket
+## Borrar ticket
 ```bash
 mutation{
   BorrarTicket(id: 22)
 }
 ```
-# Consulta ticket por id
+## Consulta ticket por id
 ```bash
 query{
   ticket(id: 20){
@@ -94,7 +94,7 @@ query{
   }
 }
 ```
-# Consulta tickets paginacion por defecto page 1, registros por pagina 10
+## Consulta tickets paginacion por defecto page 1, registros por pagina 10
 ```bash
 query{
   tickets(page: 2,limit: 5){
